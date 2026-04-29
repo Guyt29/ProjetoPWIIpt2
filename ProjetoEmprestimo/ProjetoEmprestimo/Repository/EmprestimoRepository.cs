@@ -32,6 +32,22 @@ namespace ProjetoEmprestimo.Repository
                 conexao.Close();
             }
         }
+        
+        public void Excluir(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Emprestimo ObterEmprestimo(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Livro> ObterEmprestimos()
+        {
+            throw new NotImplementedException();
+        }
+
         public void buscaIdEmp(Emprestimo emprestimo)
         {
             using (var conexao = new MySqlConnection(_conexaoMySQL))
@@ -49,17 +65,18 @@ namespace ProjetoEmprestimo.Repository
                 conexao.Close();
             }
         }
-        public void Excluir(int id)
+
+        public Emprestimo ObterEmprestimos(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Emprestimo ObterEmprestimo(int id)
+        public IEnumerable<Livro> ObterTodosEmprestimos()
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Livro> ObterEmprestimos()
+        public void buscaIdEmp(int id)
         {
             throw new NotImplementedException();
         }

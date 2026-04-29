@@ -4,11 +4,12 @@ namespace ProjetoEmprestimo.Repository.Contract
 {
     public interface IEmprestimoRepository
     {
-        IEnumerable<Livro> ObterEmprestimos();
+        IEnumerable<Livro> ObterTodosEmprestimos();
         void Cadastrar(Emprestimo emprestimo);
         void Atualizar(Emprestimo emprestimo);
-        void buscaIdEmp(int id);
+
         Emprestimo ObterEmprestimos(int id);
+        void buscaIdEmp(int id);
         void Excluir(int id);
     }
 }
