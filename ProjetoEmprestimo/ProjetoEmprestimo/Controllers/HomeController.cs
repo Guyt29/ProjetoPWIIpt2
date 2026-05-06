@@ -16,8 +16,6 @@ namespace ProjetoEmprestimo.Controllers
 
         
 
-        private readonly ILogger<HomeController> _logger;
-
         public HomeController(ILivroRepository livroRepository, CookieCarrinhoCompra cookieCarrinhoCompra,
             IEmprestimoRepository emprestimoRepository, IItemRepository itemRepository)
         {
@@ -37,13 +35,13 @@ namespace ProjetoEmprestimo.Controllers
         //{
         //    return View();
         //}
-
         public IActionResult AdicionarItem(int id)
         {
             Livro produto = _livroRepository.ObterLivros(id);
 
             if (produto == null) {
-                return View("NaoExisteItem"); }
+                return View("NaoExisteItem");
+            }
             else
             {
                 var item = new Livro()

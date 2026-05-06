@@ -6,7 +6,7 @@ namespace ProjetoEmprestimo.Models
     {
         public int codLivro { get; set; }
 
-        [DisplayName("XYZ")]
+        [DisplayName("Nome do Livro")]
 
         public string nomeLivro  { get; set; }
 

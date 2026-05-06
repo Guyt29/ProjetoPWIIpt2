@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
-using MySql.Data.MySqlClient;
-using ProjetoEmprestimo.Controllers;
-using ProjetoEmprestimo.Models;
+﻿using ProjetoEmprestimo.Models;
 using ProjetoEmprestimo.Repository.Contract;
+using MySql.Data.MySqlClient;
 using System.Data;
 
 namespace ProjetoEmprestimo.Repository
@@ -10,20 +8,11 @@ namespace ProjetoEmprestimo.Repository
     public class LivroRepository : ILivroRepository
     {
         private readonly string _conexaoMySQL;
-        private MySqlConnection conexao;
-
         public LivroRepository(IConfiguration conf)
         {
             _conexaoMySQL = conf.GetConnectionString("ConexaoMySQL");
+
         }
-
-        public object Id { get; private set; }
-
-        public void Atualizar(Livro livro)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Cadastrar(Livro livro)
         {
             using (var conexao = new MySqlConnection(_conexaoMySQL))
@@ -37,25 +26,20 @@ namespace ProjetoEmprestimo.Repository
             }
         }
 
-
-        public void Excluir(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Livro ObterLivros(int Id)
+        public Livro ObterLivros(int id)
         {
             using (var conexao = new MySqlConnection(_conexaoMySQL))
             {
                 conexao.Open();
-                MySqlCommand cmd = new MySqlCommand("select * from tbLivro where codLivro=@cod", conexao);
-                cmd.Parameters.Add("@cod", MySqlDbType.VarChar).Value = Id;
+
+                MySqlCommand cmd = new MySqlCommand("select * from tbLivro where codLivro = @cod", conexao);
+                cmd.Parameters.Add("@cod", MySqlDbType.VarChar).Value = id;
 
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);
                 MySqlDataReader dr;
 
                 Livro livro = new Livro();
-                dr = cmd .ExecuteReader(CommandBehavior.CloseConnection);
+                dr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
                 while (dr.Read())
                 {
                     livro.codLivro = Convert.ToInt32(dr["codLivro"]);
@@ -68,29 +52,37 @@ namespace ProjetoEmprestimo.Repository
 
         public IEnumerable<Livro> ObterTodosLivros()
         {
-            List<Livro> Livrolist = new List<Livro>();
+            List<Livro> LivroList = new List<Livro>();
             using (var conexao = new MySqlConnection(_conexaoMySQL))
             {
                 conexao.Open();
-                MySqlCommand cmd = new MySqlCommand("select * from tbLivro ", conexao);
+                MySqlCommand cmd = new MySqlCommand("select * from tbLivro", conexao);
                 MySqlDataAdapter sd = new MySqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
-
                 sd.Fill(dt);
                 conexao.Close();
+
                 foreach (DataRow dr in dt.Rows)
                 {
-                    Livrolist.Add(
-                         new Livro
-                         {
-                             codLivro = Convert.ToInt32(dr["codLivro"]),
-                             nomeLivro = (String)(dr["nomeLivro"]),
-                             imagemLivro = (String)(dr["imagemLivro"]),
-                         });
+                    LivroList.Add(
+                        new Livro
+                        {
+                            codLivro = Convert.ToInt32(dr["codLivro"]),
+                            nomeLivro = (String)(dr["nomeLivro"]),
+                            imagemLivro = (String)(dr["imagemLivro"]),
+                        }
+                        );
                 }
-                return Livrolist;
+                return LivroList;
             }
         }
-
+        public void Excluir(int id)
+        {
+            throw new NotImplementedException();
+        }
+        public void Atualizar(Livro livro)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

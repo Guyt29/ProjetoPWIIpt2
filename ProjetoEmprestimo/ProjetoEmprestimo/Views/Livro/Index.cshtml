@@ -7,7 +7,7 @@
 <h2 style="text-align: center;">Novo Livro</h2>
 
 <div class="center">
-    @using (Html.BeginForm("Index", "Livros", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    @using (Html.BeginForm("Index", "Livro", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
         @Html.AntiForgeryToken()
         <div class="form-horizontal">
