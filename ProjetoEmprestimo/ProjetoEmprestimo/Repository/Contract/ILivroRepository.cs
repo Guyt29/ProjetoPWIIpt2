@@ -5,13 +5,14 @@ namespace ProjetoEmprestimo.Repository.Contract
 {
     public interface ILivroRepository
     {
+        IEnumerable<Livro> ObterTodosLivros();
         void Cadastrar(Livro Livro);
 
         void Atualizar(Livro Livro);
 
-        Livro ObterLivros(Livro Livro);
+        Livro ObterLivros(int id);
 
-        void Excluir(int id);
-        void Cadastrar(LivroController livro);
+        void Excluir(int Id);
+
     }
 }

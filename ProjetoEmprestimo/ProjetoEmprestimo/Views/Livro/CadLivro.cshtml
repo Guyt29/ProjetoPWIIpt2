@@ -32,6 +32,9 @@
                 <input asp-for="quantidade" class="form-control" />
                 <span asp-validation-for="quantidade" class="text-danger"></span>
             </div>
+            @*Vamos add mensagem*@
+            @ViewBag.msg
+            <br />
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

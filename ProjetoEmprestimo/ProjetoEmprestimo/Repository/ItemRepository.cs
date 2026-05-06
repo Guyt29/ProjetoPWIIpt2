@@ -14,6 +14,11 @@ namespace ProjetoEmprestimo.Repository
             _conexaoMySQL = conf.GetConnectionString("ConexaoMySQL");
         }
 
+        public void Atualizar(Item item)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Cadastrar(Item item)
         {
             using (var conexao = new MySqlConnection(_conexaoMySQL))
@@ -28,15 +33,11 @@ namespace ProjetoEmprestimo.Repository
             }
         }
 
-        void IItemRepository.Atualizar(Livro livro)
+        public IEnumerable<Item> ObterTodosLivros()
         {
             throw new NotImplementedException();
         }
 
-        void IItemRepository.Cadastrar(Livro livro)
-        {
-            throw new NotImplementedException();
-        }
 
         void IItemRepository.Excluir(int id)
         {
@@ -48,9 +49,5 @@ namespace ProjetoEmprestimo.Repository
             throw new NotImplementedException();
         }
 
-        IEnumerable<Livro> IItemRepository.ObterTodosLivros()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

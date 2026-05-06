@@ -37,27 +37,18 @@ namespace ProjetoEmprestimo.Repository
             }
         }
 
-        public void Cadastrar(LivroController livro)
-        {
-            throw new NotImplementedException();
-        }
 
         public void Excluir(int id)
         {
             throw new NotImplementedException();
         }
 
-        public Livro ObterLivro(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Livro ObterLivros(Livro Livro)
+        public Livro ObterLivros(int Id)
         {
             using (var conexao = new MySqlConnection(_conexaoMySQL))
             {
                 conexao.Open();
-                MySqlCommand cmd = new MySqlCommand("select * from tbLivro where codLivro=@cod )", conexao);
+                MySqlCommand cmd = new MySqlCommand("select * from tbLivro where codLivro=@cod", conexao);
                 cmd.Parameters.Add("@cod", MySqlDbType.VarChar).Value = Id;
 
                 MySqlDataAdapter da = new MySqlDataAdapter(cmd);

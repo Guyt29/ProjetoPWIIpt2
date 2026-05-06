@@ -21,7 +21,7 @@
         }
 
         // DELETA COOKIE
-        public void Deletar(string Key)
+        public void Remover(string Key)
         {
             _context.HttpContext.Response.Cookies.Delete(Key);
         }
@@ -41,6 +41,13 @@
             }
             return true;
         }
-
+        public void Atualizar(string Key, string Valor)
+        {
+            if(Existe(Key))
+            {
+                Remover(Key);
+            }
+            Cadastrar(Key, Valor);
+        }
     }
 }

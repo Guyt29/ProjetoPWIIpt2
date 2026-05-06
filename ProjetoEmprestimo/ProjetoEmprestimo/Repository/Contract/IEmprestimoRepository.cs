@@ -9,7 +9,7 @@ namespace ProjetoEmprestimo.Repository.Contract
         void Atualizar(Emprestimo emprestimo);
 
         Emprestimo ObterEmprestimos(int id);
-        void buscaIdEmp(int id);
+        void buscaIdEmp(Emprestimo emprestimo);
         void Excluir(int id);
     }
 }

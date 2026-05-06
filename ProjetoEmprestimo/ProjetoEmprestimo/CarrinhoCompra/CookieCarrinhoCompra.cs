@@ -82,5 +82,17 @@ namespace ProjetoEmprestimo.CarrinhoCompra
                 Salvar(Lista);
             }
         }
+        public bool Existe(string Key)
+        {
+            if (_cookie.Existe(Key))
+            {
+                return false;
+            }
+            return true;
+        }
+        public void RemoverTodos()
+        {
+            _cookie.Remover(Key);
+        }
     }
 }
