@@ -1,5 +1,9 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\Imagens\asdasdsasadas.png
+wwwroot\Imagens\OIP.webp
+wwwroot\Imagens\ShadowTheHedgehogSA2.png
+wwwroot\Imagens\SteamHappy.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -58,5 +62,3 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\Imagens\SteamHappy.png
-wwwroot\Imagens\ShadowTheHedgehogSA2.png
