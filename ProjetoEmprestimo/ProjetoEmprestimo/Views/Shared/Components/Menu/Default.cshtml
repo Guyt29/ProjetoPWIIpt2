@@ -38,9 +38,9 @@
                     @if (Model != null && Model.Any())
                     {
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-list-ul"></i> Categorias
-                            </a>
+                        <a data-bs-toggle="dropdown" class="nav-link text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categorias
+                        </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 @foreach (var categoria in Model)
                                 {

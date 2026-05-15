@@ -490,3 +490,16 @@ C:\Users\3MTEC\Desktop\ProjetoEmprestimo\ProjetoEmprestimo\ProjetoEmprestimo\obj
 C:\Users\3MTEC\Desktop\ProjetoEmprestimo\ProjetoEmprestimo\ProjetoEmprestimo\obj\Debug\net8.0\ProjetoEmprestimo.pdb
 C:\Users\3MTEC\Desktop\ProjetoEmprestimo\ProjetoEmprestimo\ProjetoEmprestimo\obj\Debug\net8.0\ProjetoEmprestimo.genruntimeconfig.cache
 C:\Users\3MTEC\Desktop\ProjetoEmprestimo\ProjetoEmprestimo\ProjetoEmprestimo\obj\Debug\net8.0\ref\ProjetoEmprestimo.dll
+C:\Users\3MTEC\Documents\ProjetoPWIIpt2\ProjetoEmprestimo\obj\Debug\net8.0\ProjetoEmprestimo.csproj.AssemblyReference.cache
+C:\Users\3MTEC\Documents\ProjetoPWIIpt2\ProjetoEmprestimo\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\3MTEC\Documents\ProjetoPWIIpt2\ProjetoEmprestimo\obj\Debug\net8.0\ProjetoEmprestimo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\3MTEC\Documents\ProjetoPWIIpt2\ProjetoEmprestimo\obj\Debug\net8.0\ProjetoEmprestimo.AssemblyInfoInputs.cache
+C:\Users\3MTEC\Documents\ProjetoPWIIpt2\ProjetoEmprestimo\obj\Debug\net8.0\ProjetoEmprestimo.AssemblyInfo.cs
+C:\Users\3MTEC\Documents\ProjetoPWIIpt2\ProjetoEmprestimo\obj\Debug\net8.0\ProjetoEmprestimo.csproj.CoreCompileInputs.cache
+C:\Users\3MTEC\Documents\ProjetoPWIIpt2\ProjetoEmprestimo\obj\Debug\net8.0\ProjetoEmprestimo.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\3MTEC\Documents\ProjetoPWIIpt2\ProjetoEmprestimo\obj\Debug\net8.0\ProjetoEmprestimo.RazorAssemblyInfo.cache
+C:\Users\3MTEC\Documents\ProjetoPWIIpt2\ProjetoEmprestimo\obj\Debug\net8.0\ProjetoEmprestimo.RazorAssemblyInfo.cs
+C:\Users\3MTEC\Documents\ProjetoPWIIpt2\ProjetoEmprestimo\obj\Debug\net8.0\ProjetoEmprestimo.sourcelink.json
+C:\Users\3MTEC\Documents\ProjetoPWIIpt2\ProjetoEmprestimo\obj\Debug\net8.0\ProjetoEmprestimo.dll
+C:\Users\3MTEC\Documents\ProjetoPWIIpt2\ProjetoEmprestimo\obj\Debug\net8.0\refint\ProjetoEmprestimo.dll
+C:\Users\3MTEC\Documents\ProjetoPWIIpt2\ProjetoEmprestimo\obj\Debug\net8.0\ProjetoEmprestimo.pdb
